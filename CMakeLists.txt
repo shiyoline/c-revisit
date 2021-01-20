@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.17)
+project(c_revisit C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(c_revisit main.c)
+add_executable(c_revisit_introduction introduction.c)
