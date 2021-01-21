@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named c_revisit_convertTemperature
+
+# Build rule for target.
+c_revisit_convertTemperature: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_convertTemperature
+.PHONY : c_revisit_convertTemperature
+
+# fast build rule for target.
+c_revisit_convertTemperature/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_convertTemperature.dir/build.make CMakeFiles/c_revisit_convertTemperature.dir/build
+.PHONY : c_revisit_convertTemperature/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_testArithmetics
 
 # Build rule for target.
@@ -274,6 +287,33 @@ CircleComputation.s: CircleComputation.c.s
 CircleComputation.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/CircleComputation.c.s
 .PHONY : CircleComputation.c.s
+
+ConvertTemperature.o: ConvertTemperature.c.o
+
+.PHONY : ConvertTemperature.o
+
+# target to build an object file
+ConvertTemperature.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_convertTemperature.dir/build.make CMakeFiles/c_revisit_convertTemperature.dir/ConvertTemperature.c.o
+.PHONY : ConvertTemperature.c.o
+
+ConvertTemperature.i: ConvertTemperature.c.i
+
+.PHONY : ConvertTemperature.i
+
+# target to preprocess a source file
+ConvertTemperature.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_convertTemperature.dir/build.make CMakeFiles/c_revisit_convertTemperature.dir/ConvertTemperature.c.i
+.PHONY : ConvertTemperature.c.i
+
+ConvertTemperature.s: ConvertTemperature.c.s
+
+.PHONY : ConvertTemperature.s
+
+# target to generate assembly for a file
+ConvertTemperature.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_convertTemperature.dir/build.make CMakeFiles/c_revisit_convertTemperature.dir/ConvertTemperature.c.s
+.PHONY : ConvertTemperature.c.s
 
 PromptAdd2Integers.o: PromptAdd2Integers.c.o
 
@@ -421,6 +461,7 @@ help:
 	@echo "... c_revisit"
 	@echo "... c_revisit_add2integers"
 	@echo "... c_revisit_circleComputation"
+	@echo "... c_revisit_convertTemperature"
 	@echo "... c_revisit_introduction"
 	@echo "... c_revisit_promptadd2integers"
 	@echo "... c_revisit_sumOddEven"
@@ -431,6 +472,9 @@ help:
 	@echo "... CircleComputation.o"
 	@echo "... CircleComputation.i"
 	@echo "... CircleComputation.s"
+	@echo "... ConvertTemperature.o"
+	@echo "... ConvertTemperature.i"
+	@echo "... ConvertTemperature.s"
 	@echo "... PromptAdd2Integers.o"
 	@echo "... PromptAdd2Integers.i"
 	@echo "... PromptAdd2Integers.s"

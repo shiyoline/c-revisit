@@ -10,4 +10,5 @@ add_executable(c_revisit_promptadd2integers PromptAdd2Integers.c)
 add_executable(c_revisit_circleComputation CircleComputation.c)
 add_executable(c_revisit_testArithmetics TestArithmetics.c)
 add_executable(c_revisit_sumOddEven SumOddEven.c)
+add_executable(c_revisit_convertTemperature ConvertTemperature.c)
 
