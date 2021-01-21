@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named c_revisit_add2integers
+
+# Build rule for target.
+c_revisit_add2integers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_add2integers
+.PHONY : c_revisit_add2integers
+
+# fast build rule for target.
+c_revisit_add2integers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/build
+.PHONY : c_revisit_add2integers/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_introduction
 
 # Build rule for target.
@@ -155,6 +168,33 @@ c_revisit: cmake_check_build_system
 c_revisit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit.dir/build.make CMakeFiles/c_revisit.dir/build
 .PHONY : c_revisit/fast
+
+Add2Integers.o: Add2Integers.c.o
+
+.PHONY : Add2Integers.o
+
+# target to build an object file
+Add2Integers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/Add2Integers.c.o
+.PHONY : Add2Integers.c.o
+
+Add2Integers.i: Add2Integers.c.i
+
+.PHONY : Add2Integers.i
+
+# target to preprocess a source file
+Add2Integers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/Add2Integers.c.i
+.PHONY : Add2Integers.c.i
+
+Add2Integers.s: Add2Integers.c.s
+
+.PHONY : Add2Integers.s
+
+# target to generate assembly for a file
+Add2Integers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/Add2Integers.c.s
+.PHONY : Add2Integers.c.s
 
 introduction.o: introduction.c.o
 
@@ -219,7 +259,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... c_revisit"
+	@echo "... c_revisit_add2integers"
 	@echo "... c_revisit_introduction"
+	@echo "... Add2Integers.o"
+	@echo "... Add2Integers.i"
+	@echo "... Add2Integers.s"
 	@echo "... introduction.o"
 	@echo "... introduction.i"
 	@echo "... introduction.s"

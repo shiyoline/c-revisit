@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/aruko/Desktop/programming-related/my-github-repos/c-pr
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/c_revisit_add2integers.dir/all
 all: CMakeFiles/c_revisit_introduction.dir/all
 all: CMakeFiles/c_revisit.dir/all
 
@@ -84,10 +85,38 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/c_revisit_add2integers.dir/clean
 clean: CMakeFiles/c_revisit_introduction.dir/clean
 clean: CMakeFiles/c_revisit.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/c_revisit_add2integers.dir
+
+# All Build rule for target.
+CMakeFiles/c_revisit_add2integers.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target c_revisit_add2integers"
+.PHONY : CMakeFiles/c_revisit_add2integers.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/c_revisit_add2integers.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/c_revisit_add2integers.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/c_revisit_add2integers.dir/rule
+
+# Convenience name for target.
+c_revisit_add2integers: CMakeFiles/c_revisit_add2integers.dir/rule
+
+.PHONY : c_revisit_add2integers
+
+# clean rule for target.
+CMakeFiles/c_revisit_add2integers.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/clean
+.PHONY : CMakeFiles/c_revisit_add2integers.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/c_revisit_introduction.dir
@@ -96,7 +125,7 @@ clean: CMakeFiles/c_revisit.dir/clean
 CMakeFiles/c_revisit_introduction.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_introduction.dir/build.make CMakeFiles/c_revisit_introduction.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_introduction.dir/build.make CMakeFiles/c_revisit_introduction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target c_revisit_introduction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target c_revisit_introduction"
 .PHONY : CMakeFiles/c_revisit_introduction.dir/all
 
 # Build rule for subdir invocation for target.
