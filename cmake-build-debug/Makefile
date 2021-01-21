@@ -144,6 +144,19 @@ c_revisit_add2integers/fast:
 .PHONY : c_revisit_add2integers/fast
 
 #=============================================================================
+# Target rules for targets named c_revisit_promptadd2integers
+
+# Build rule for target.
+c_revisit_promptadd2integers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_promptadd2integers
+.PHONY : c_revisit_promptadd2integers
+
+# fast build rule for target.
+c_revisit_promptadd2integers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/build
+.PHONY : c_revisit_promptadd2integers/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_introduction
 
 # Build rule for target.
@@ -195,6 +208,33 @@ Add2Integers.s: Add2Integers.c.s
 Add2Integers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/Add2Integers.c.s
 .PHONY : Add2Integers.c.s
+
+PromptAdd2Integers.o: PromptAdd2Integers.c.o
+
+.PHONY : PromptAdd2Integers.o
+
+# target to build an object file
+PromptAdd2Integers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/PromptAdd2Integers.c.o
+.PHONY : PromptAdd2Integers.c.o
+
+PromptAdd2Integers.i: PromptAdd2Integers.c.i
+
+.PHONY : PromptAdd2Integers.i
+
+# target to preprocess a source file
+PromptAdd2Integers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/PromptAdd2Integers.c.i
+.PHONY : PromptAdd2Integers.c.i
+
+PromptAdd2Integers.s: PromptAdd2Integers.c.s
+
+.PHONY : PromptAdd2Integers.s
+
+# target to generate assembly for a file
+PromptAdd2Integers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/PromptAdd2Integers.c.s
+.PHONY : PromptAdd2Integers.c.s
 
 introduction.o: introduction.c.o
 
@@ -261,9 +301,13 @@ help:
 	@echo "... c_revisit"
 	@echo "... c_revisit_add2integers"
 	@echo "... c_revisit_introduction"
+	@echo "... c_revisit_promptadd2integers"
 	@echo "... Add2Integers.o"
 	@echo "... Add2Integers.i"
 	@echo "... Add2Integers.s"
+	@echo "... PromptAdd2Integers.o"
+	@echo "... PromptAdd2Integers.i"
+	@echo "... PromptAdd2Integers.s"
 	@echo "... introduction.o"
 	@echo "... introduction.i"
 	@echo "... introduction.s"

@@ -48,6 +48,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/c_revisit_add2integers.dir/DependInfo.cmake"
+  "CMakeFiles/c_revisit_promptadd2integers.dir/DependInfo.cmake"
   "CMakeFiles/c_revisit_introduction.dir/DependInfo.cmake"
   "CMakeFiles/c_revisit.dir/DependInfo.cmake"
   )
