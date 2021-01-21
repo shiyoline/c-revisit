@@ -27,8 +27,8 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="c_revisit_add2integers">
-				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_add2integers" prefix_auto="0" extension_auto="0"/>
+			<Target title="c_revisit_circleComputation">
+				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_circleComputation" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -41,14 +41,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_add2integers"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_circleComputation"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="c_revisit_add2integers/fast">
-				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_add2integers" prefix_auto="0" extension_auto="0"/>
+			<Target title="c_revisit_circleComputation/fast">
+				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_circleComputation" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -61,17 +61,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_add2integers/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_circleComputation/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -112,6 +102,56 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_promptadd2integers/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c_revisit_add2integers">
+				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_add2integers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_add2integers"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c_revisit_add2integers/fast">
+				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_add2integers" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_add2integers/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -200,6 +240,9 @@
 		</Build>
 		<Unit filename="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/Add2Integers.c">
 			<Option target="c_revisit_add2integers"/>
+		</Unit>
+		<Unit filename="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/CircleComputation.c">
+			<Option target="c_revisit_circleComputation"/>
 		</Unit>
 		<Unit filename="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/PromptAdd2Integers.c">
 			<Option target="c_revisit_promptadd2integers"/>

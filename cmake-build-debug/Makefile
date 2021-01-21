@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named c_revisit_add2integers
+# Target rules for targets named c_revisit_circleComputation
 
 # Build rule for target.
-c_revisit_add2integers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_add2integers
-.PHONY : c_revisit_add2integers
+c_revisit_circleComputation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_circleComputation
+.PHONY : c_revisit_circleComputation
 
 # fast build rule for target.
-c_revisit_add2integers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/build
-.PHONY : c_revisit_add2integers/fast
+c_revisit_circleComputation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/build
+.PHONY : c_revisit_circleComputation/fast
 
 #=============================================================================
 # Target rules for targets named c_revisit_promptadd2integers
@@ -155,6 +155,19 @@ c_revisit_promptadd2integers: cmake_check_build_system
 c_revisit_promptadd2integers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/build
 .PHONY : c_revisit_promptadd2integers/fast
+
+#=============================================================================
+# Target rules for targets named c_revisit_add2integers
+
+# Build rule for target.
+c_revisit_add2integers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_add2integers
+.PHONY : c_revisit_add2integers
+
+# fast build rule for target.
+c_revisit_add2integers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/build
+.PHONY : c_revisit_add2integers/fast
 
 #=============================================================================
 # Target rules for targets named c_revisit_introduction
@@ -208,6 +221,33 @@ Add2Integers.s: Add2Integers.c.s
 Add2Integers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_add2integers.dir/build.make CMakeFiles/c_revisit_add2integers.dir/Add2Integers.c.s
 .PHONY : Add2Integers.c.s
+
+CircleComputation.o: CircleComputation.c.o
+
+.PHONY : CircleComputation.o
+
+# target to build an object file
+CircleComputation.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/CircleComputation.c.o
+.PHONY : CircleComputation.c.o
+
+CircleComputation.i: CircleComputation.c.i
+
+.PHONY : CircleComputation.i
+
+# target to preprocess a source file
+CircleComputation.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/CircleComputation.c.i
+.PHONY : CircleComputation.c.i
+
+CircleComputation.s: CircleComputation.c.s
+
+.PHONY : CircleComputation.s
+
+# target to generate assembly for a file
+CircleComputation.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/CircleComputation.c.s
+.PHONY : CircleComputation.c.s
 
 PromptAdd2Integers.o: PromptAdd2Integers.c.o
 
@@ -300,11 +340,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... c_revisit"
 	@echo "... c_revisit_add2integers"
+	@echo "... c_revisit_circleComputation"
 	@echo "... c_revisit_introduction"
 	@echo "... c_revisit_promptadd2integers"
 	@echo "... Add2Integers.o"
 	@echo "... Add2Integers.i"
 	@echo "... Add2Integers.s"
+	@echo "... CircleComputation.o"
+	@echo "... CircleComputation.i"
+	@echo "... CircleComputation.s"
 	@echo "... PromptAdd2Integers.o"
 	@echo "... PromptAdd2Integers.i"
 	@echo "... PromptAdd2Integers.s"
