@@ -11,4 +11,5 @@ add_executable(c_revisit_circleComputation CircleComputation.c)
 add_executable(c_revisit_testArithmetics TestArithmetics.c)
 add_executable(c_revisit_sumOddEven SumOddEven.c)
 add_executable(c_revisit_convertTemperature ConvertTemperature.c)
+add_executable(c_revisit_testCastingAverage TestCastingAverage.c)
 

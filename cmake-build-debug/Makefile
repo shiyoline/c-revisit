@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named c_revisit_testCastingAverage
+
+# Build rule for target.
+c_revisit_testCastingAverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_testCastingAverage
+.PHONY : c_revisit_testCastingAverage
+
+# fast build rule for target.
+c_revisit_testCastingAverage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/build
+.PHONY : c_revisit_testCastingAverage/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_convertTemperature
 
 # Build rule for target.
@@ -396,6 +409,33 @@ TestArithmetics.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/TestArithmetics.c.s
 .PHONY : TestArithmetics.c.s
 
+TestCastingAverage.o: TestCastingAverage.c.o
+
+.PHONY : TestCastingAverage.o
+
+# target to build an object file
+TestCastingAverage.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/TestCastingAverage.c.o
+.PHONY : TestCastingAverage.c.o
+
+TestCastingAverage.i: TestCastingAverage.c.i
+
+.PHONY : TestCastingAverage.i
+
+# target to preprocess a source file
+TestCastingAverage.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/TestCastingAverage.c.i
+.PHONY : TestCastingAverage.c.i
+
+TestCastingAverage.s: TestCastingAverage.c.s
+
+.PHONY : TestCastingAverage.s
+
+# target to generate assembly for a file
+TestCastingAverage.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/TestCastingAverage.c.s
+.PHONY : TestCastingAverage.c.s
+
 introduction.o: introduction.c.o
 
 .PHONY : introduction.o
@@ -466,6 +506,7 @@ help:
 	@echo "... c_revisit_promptadd2integers"
 	@echo "... c_revisit_sumOddEven"
 	@echo "... c_revisit_testArithmetics"
+	@echo "... c_revisit_testCastingAverage"
 	@echo "... Add2Integers.o"
 	@echo "... Add2Integers.i"
 	@echo "... Add2Integers.s"
@@ -484,6 +525,9 @@ help:
 	@echo "... TestArithmetics.o"
 	@echo "... TestArithmetics.i"
 	@echo "... TestArithmetics.s"
+	@echo "... TestCastingAverage.o"
+	@echo "... TestCastingAverage.i"
+	@echo "... TestCastingAverage.s"
 	@echo "... introduction.o"
 	@echo "... introduction.i"
 	@echo "... introduction.s"

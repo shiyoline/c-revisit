@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/aruko/Desktop/programming-related/my-github-repos/c-pr
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/c_revisit_testCastingAverage.dir/all
 all: CMakeFiles/c_revisit_convertTemperature.dir/all
 all: CMakeFiles/c_revisit_testArithmetics.dir/all
 all: CMakeFiles/c_revisit_circleComputation.dir/all
@@ -90,6 +91,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/c_revisit_testCastingAverage.dir/clean
 clean: CMakeFiles/c_revisit_convertTemperature.dir/clean
 clean: CMakeFiles/c_revisit_testArithmetics.dir/clean
 clean: CMakeFiles/c_revisit_circleComputation.dir/clean
@@ -100,6 +102,33 @@ clean: CMakeFiles/c_revisit_introduction.dir/clean
 clean: CMakeFiles/c_revisit.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/c_revisit_testCastingAverage.dir
+
+# All Build rule for target.
+CMakeFiles/c_revisit_testCastingAverage.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target c_revisit_testCastingAverage"
+.PHONY : CMakeFiles/c_revisit_testCastingAverage.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/c_revisit_testCastingAverage.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/c_revisit_testCastingAverage.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/c_revisit_testCastingAverage.dir/rule
+
+# Convenience name for target.
+c_revisit_testCastingAverage: CMakeFiles/c_revisit_testCastingAverage.dir/rule
+
+.PHONY : c_revisit_testCastingAverage
+
+# clean rule for target.
+CMakeFiles/c_revisit_testCastingAverage.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/clean
+.PHONY : CMakeFiles/c_revisit_testCastingAverage.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/c_revisit_convertTemperature.dir
