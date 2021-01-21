@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named c_revisit_testArithmetics
+
+# Build rule for target.
+c_revisit_testArithmetics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_testArithmetics
+.PHONY : c_revisit_testArithmetics
+
+# fast build rule for target.
+c_revisit_testArithmetics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/build
+.PHONY : c_revisit_testArithmetics/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_circleComputation
 
 # Build rule for target.
@@ -155,6 +168,19 @@ c_revisit_promptadd2integers: cmake_check_build_system
 c_revisit_promptadd2integers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/build
 .PHONY : c_revisit_promptadd2integers/fast
+
+#=============================================================================
+# Target rules for targets named c_revisit_sumOddEven
+
+# Build rule for target.
+c_revisit_sumOddEven: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_sumOddEven
+.PHONY : c_revisit_sumOddEven
+
+# fast build rule for target.
+c_revisit_sumOddEven/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/build
+.PHONY : c_revisit_sumOddEven/fast
 
 #=============================================================================
 # Target rules for targets named c_revisit_add2integers
@@ -276,6 +302,60 @@ PromptAdd2Integers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/PromptAdd2Integers.c.s
 .PHONY : PromptAdd2Integers.c.s
 
+SumOddEven.o: SumOddEven.c.o
+
+.PHONY : SumOddEven.o
+
+# target to build an object file
+SumOddEven.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/SumOddEven.c.o
+.PHONY : SumOddEven.c.o
+
+SumOddEven.i: SumOddEven.c.i
+
+.PHONY : SumOddEven.i
+
+# target to preprocess a source file
+SumOddEven.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/SumOddEven.c.i
+.PHONY : SumOddEven.c.i
+
+SumOddEven.s: SumOddEven.c.s
+
+.PHONY : SumOddEven.s
+
+# target to generate assembly for a file
+SumOddEven.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/SumOddEven.c.s
+.PHONY : SumOddEven.c.s
+
+TestArithmetics.o: TestArithmetics.c.o
+
+.PHONY : TestArithmetics.o
+
+# target to build an object file
+TestArithmetics.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/TestArithmetics.c.o
+.PHONY : TestArithmetics.c.o
+
+TestArithmetics.i: TestArithmetics.c.i
+
+.PHONY : TestArithmetics.i
+
+# target to preprocess a source file
+TestArithmetics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/TestArithmetics.c.i
+.PHONY : TestArithmetics.c.i
+
+TestArithmetics.s: TestArithmetics.c.s
+
+.PHONY : TestArithmetics.s
+
+# target to generate assembly for a file
+TestArithmetics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/TestArithmetics.c.s
+.PHONY : TestArithmetics.c.s
+
 introduction.o: introduction.c.o
 
 .PHONY : introduction.o
@@ -343,6 +423,8 @@ help:
 	@echo "... c_revisit_circleComputation"
 	@echo "... c_revisit_introduction"
 	@echo "... c_revisit_promptadd2integers"
+	@echo "... c_revisit_sumOddEven"
+	@echo "... c_revisit_testArithmetics"
 	@echo "... Add2Integers.o"
 	@echo "... Add2Integers.i"
 	@echo "... Add2Integers.s"
@@ -352,6 +434,12 @@ help:
 	@echo "... PromptAdd2Integers.o"
 	@echo "... PromptAdd2Integers.i"
 	@echo "... PromptAdd2Integers.s"
+	@echo "... SumOddEven.o"
+	@echo "... SumOddEven.i"
+	@echo "... SumOddEven.s"
+	@echo "... TestArithmetics.o"
+	@echo "... TestArithmetics.i"
+	@echo "... TestArithmetics.s"
 	@echo "... introduction.o"
 	@echo "... introduction.i"
 	@echo "... introduction.s"
