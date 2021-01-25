@@ -77,6 +77,7 @@ all: CMakeFiles/c_revisit_testCastingAverage.dir/all
 all: CMakeFiles/c_revisit.dir/all
 all: CMakeFiles/c_revisit_sumOddEven.dir/all
 all: CMakeFiles/c_revisit_convertTemperature.dir/all
+all: CMakeFiles/c_revisit_cash.dir/all
 all: CMakeFiles/c_revisit_testArithmetics.dir/all
 all: CMakeFiles/c_revisit_circleComputation.dir/all
 all: CMakeFiles/c_revisit_population.dir/all
@@ -96,6 +97,7 @@ clean: CMakeFiles/c_revisit_testCastingAverage.dir/clean
 clean: CMakeFiles/c_revisit.dir/clean
 clean: CMakeFiles/c_revisit_sumOddEven.dir/clean
 clean: CMakeFiles/c_revisit_convertTemperature.dir/clean
+clean: CMakeFiles/c_revisit_cash.dir/clean
 clean: CMakeFiles/c_revisit_testArithmetics.dir/clean
 clean: CMakeFiles/c_revisit_circleComputation.dir/clean
 clean: CMakeFiles/c_revisit_population.dir/clean
@@ -112,7 +114,7 @@ clean: CMakeFiles/c_revisit_introduction.dir/clean
 CMakeFiles/c_revisit_testCastingAverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target c_revisit_testCastingAverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target c_revisit_testCastingAverage"
 .PHONY : CMakeFiles/c_revisit_testCastingAverage.dir/all
 
 # Build rule for subdir invocation for target.
@@ -166,7 +168,7 @@ CMakeFiles/c_revisit.dir/clean:
 CMakeFiles/c_revisit_sumOddEven.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target c_revisit_sumOddEven"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target c_revisit_sumOddEven"
 .PHONY : CMakeFiles/c_revisit_sumOddEven.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,7 +195,7 @@ CMakeFiles/c_revisit_sumOddEven.dir/clean:
 CMakeFiles/c_revisit_convertTemperature.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_convertTemperature.dir/build.make CMakeFiles/c_revisit_convertTemperature.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_convertTemperature.dir/build.make CMakeFiles/c_revisit_convertTemperature.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target c_revisit_convertTemperature"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target c_revisit_convertTemperature"
 .PHONY : CMakeFiles/c_revisit_convertTemperature.dir/all
 
 # Build rule for subdir invocation for target.
@@ -214,13 +216,40 @@ CMakeFiles/c_revisit_convertTemperature.dir/clean:
 .PHONY : CMakeFiles/c_revisit_convertTemperature.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/c_revisit_cash.dir
+
+# All Build rule for target.
+CMakeFiles/c_revisit_cash.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target c_revisit_cash"
+.PHONY : CMakeFiles/c_revisit_cash.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/c_revisit_cash.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/c_revisit_cash.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/c_revisit_cash.dir/rule
+
+# Convenience name for target.
+c_revisit_cash: CMakeFiles/c_revisit_cash.dir/rule
+
+.PHONY : c_revisit_cash
+
+# clean rule for target.
+CMakeFiles/c_revisit_cash.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/clean
+.PHONY : CMakeFiles/c_revisit_cash.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/c_revisit_testArithmetics.dir
 
 # All Build rule for target.
 CMakeFiles/c_revisit_testArithmetics.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testArithmetics.dir/build.make CMakeFiles/c_revisit_testArithmetics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target c_revisit_testArithmetics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target c_revisit_testArithmetics"
 .PHONY : CMakeFiles/c_revisit_testArithmetics.dir/all
 
 # Build rule for subdir invocation for target.
@@ -247,7 +276,7 @@ CMakeFiles/c_revisit_testArithmetics.dir/clean:
 CMakeFiles/c_revisit_circleComputation.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_circleComputation.dir/build.make CMakeFiles/c_revisit_circleComputation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target c_revisit_circleComputation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target c_revisit_circleComputation"
 .PHONY : CMakeFiles/c_revisit_circleComputation.dir/all
 
 # Build rule for subdir invocation for target.
@@ -274,7 +303,7 @@ CMakeFiles/c_revisit_circleComputation.dir/clean:
 CMakeFiles/c_revisit_population.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_population.dir/build.make CMakeFiles/c_revisit_population.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_population.dir/build.make CMakeFiles/c_revisit_population.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target c_revisit_population"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target c_revisit_population"
 .PHONY : CMakeFiles/c_revisit_population.dir/all
 
 # Build rule for subdir invocation for target.
@@ -301,7 +330,7 @@ CMakeFiles/c_revisit_population.dir/clean:
 CMakeFiles/c_revisit_promptadd2integers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target c_revisit_promptadd2integers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target c_revisit_promptadd2integers"
 .PHONY : CMakeFiles/c_revisit_promptadd2integers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -355,7 +384,7 @@ CMakeFiles/c_revisit_add2integers.dir/clean:
 CMakeFiles/c_revisit_introduction.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_introduction.dir/build.make CMakeFiles/c_revisit_introduction.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_introduction.dir/build.make CMakeFiles/c_revisit_introduction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target c_revisit_introduction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target c_revisit_introduction"
 .PHONY : CMakeFiles/c_revisit_introduction.dir/all
 
 # Build rule for subdir invocation for target.

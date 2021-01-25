@@ -177,6 +177,46 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="c_revisit_cash">
+				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_cash" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_cash"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c_revisit_cash/fast">
+				<Option output="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/c_revisit_cash" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 c_revisit_cash/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug"/>
 				<Option type="4"/>
@@ -458,6 +498,9 @@
 		</Unit>
 		<Unit filename="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/TestCastingAverage.c">
 			<Option target="c_revisit_testCastingAverage"/>
+		</Unit>
+		<Unit filename="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cash.c">
+			<Option target="c_revisit_cash"/>
 		</Unit>
 		<Unit filename="/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/introduction.c">
 			<Option target="c_revisit_introduction"/>

@@ -183,6 +183,19 @@ c_revisit_convertTemperature/fast:
 .PHONY : c_revisit_convertTemperature/fast
 
 #=============================================================================
+# Target rules for targets named c_revisit_cash
+
+# Build rule for target.
+c_revisit_cash: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_cash
+.PHONY : c_revisit_cash
+
+# fast build rule for target.
+c_revisit_cash/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/build
+.PHONY : c_revisit_cash/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_testArithmetics
 
 # Build rule for target.
@@ -449,6 +462,33 @@ TestCastingAverage.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_testCastingAverage.dir/build.make CMakeFiles/c_revisit_testCastingAverage.dir/TestCastingAverage.c.s
 .PHONY : TestCastingAverage.c.s
 
+cash.o: cash.c.o
+
+.PHONY : cash.o
+
+# target to build an object file
+cash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/cash.c.o
+.PHONY : cash.c.o
+
+cash.i: cash.c.i
+
+.PHONY : cash.i
+
+# target to preprocess a source file
+cash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/cash.c.i
+.PHONY : cash.c.i
+
+cash.s: cash.c.s
+
+.PHONY : cash.s
+
+# target to generate assembly for a file
+cash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_cash.dir/build.make CMakeFiles/c_revisit_cash.dir/cash.c.s
+.PHONY : cash.c.s
+
 introduction.o: introduction.c.o
 
 .PHONY : introduction.o
@@ -540,6 +580,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... c_revisit"
 	@echo "... c_revisit_add2integers"
+	@echo "... c_revisit_cash"
 	@echo "... c_revisit_circleComputation"
 	@echo "... c_revisit_convertTemperature"
 	@echo "... c_revisit_introduction"
@@ -569,6 +610,9 @@ help:
 	@echo "... TestCastingAverage.o"
 	@echo "... TestCastingAverage.i"
 	@echo "... TestCastingAverage.s"
+	@echo "... cash.o"
+	@echo "... cash.i"
+	@echo "... cash.s"
 	@echo "... introduction.o"
 	@echo "... introduction.i"
 	@echo "... introduction.s"

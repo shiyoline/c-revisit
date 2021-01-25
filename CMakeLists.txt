@@ -13,4 +13,5 @@ add_executable(c_revisit_sumOddEven SumOddEven.c)
 add_executable(c_revisit_convertTemperature ConvertTemperature.c)
 add_executable(c_revisit_testCastingAverage TestCastingAverage.c)
 add_executable(c_revisit_population population.c)
+add_executable(c_revisit_cash cash.c)
 

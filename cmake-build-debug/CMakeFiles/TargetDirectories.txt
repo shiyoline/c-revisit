@@ -2,6 +2,7 @@
 /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/c_revisit.dir
 /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/c_revisit_sumOddEven.dir
 /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/c_revisit_convertTemperature.dir
+/Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/c_revisit_cash.dir
 /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/c_revisit_testArithmetics.dir
 /Users/aruko/Desktop/programming-related/my-github-repos/c-programming/c-revisit/cmake-build-debug/CMakeFiles/c_revisit_circleComputation.dir
