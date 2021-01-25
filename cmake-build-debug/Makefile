@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/aruko/Desktop/programming-related/my-github-repos/c-pr
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -144,6 +144,32 @@ c_revisit_testCastingAverage/fast:
 .PHONY : c_revisit_testCastingAverage/fast
 
 #=============================================================================
+# Target rules for targets named c_revisit
+
+# Build rule for target.
+c_revisit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit
+.PHONY : c_revisit
+
+# fast build rule for target.
+c_revisit/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit.dir/build.make CMakeFiles/c_revisit.dir/build
+.PHONY : c_revisit/fast
+
+#=============================================================================
+# Target rules for targets named c_revisit_sumOddEven
+
+# Build rule for target.
+c_revisit_sumOddEven: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_sumOddEven
+.PHONY : c_revisit_sumOddEven
+
+# fast build rule for target.
+c_revisit_sumOddEven/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/build
+.PHONY : c_revisit_sumOddEven/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_convertTemperature
 
 # Build rule for target.
@@ -183,6 +209,19 @@ c_revisit_circleComputation/fast:
 .PHONY : c_revisit_circleComputation/fast
 
 #=============================================================================
+# Target rules for targets named c_revisit_population
+
+# Build rule for target.
+c_revisit_population: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_population
+.PHONY : c_revisit_population
+
+# fast build rule for target.
+c_revisit_population/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_population.dir/build.make CMakeFiles/c_revisit_population.dir/build
+.PHONY : c_revisit_population/fast
+
+#=============================================================================
 # Target rules for targets named c_revisit_promptadd2integers
 
 # Build rule for target.
@@ -194,19 +233,6 @@ c_revisit_promptadd2integers: cmake_check_build_system
 c_revisit_promptadd2integers/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_promptadd2integers.dir/build.make CMakeFiles/c_revisit_promptadd2integers.dir/build
 .PHONY : c_revisit_promptadd2integers/fast
-
-#=============================================================================
-# Target rules for targets named c_revisit_sumOddEven
-
-# Build rule for target.
-c_revisit_sumOddEven: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit_sumOddEven
-.PHONY : c_revisit_sumOddEven
-
-# fast build rule for target.
-c_revisit_sumOddEven/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_sumOddEven.dir/build.make CMakeFiles/c_revisit_sumOddEven.dir/build
-.PHONY : c_revisit_sumOddEven/fast
 
 #=============================================================================
 # Target rules for targets named c_revisit_add2integers
@@ -233,19 +259,6 @@ c_revisit_introduction: cmake_check_build_system
 c_revisit_introduction/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_introduction.dir/build.make CMakeFiles/c_revisit_introduction.dir/build
 .PHONY : c_revisit_introduction/fast
-
-#=============================================================================
-# Target rules for targets named c_revisit
-
-# Build rule for target.
-c_revisit: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c_revisit
-.PHONY : c_revisit
-
-# fast build rule for target.
-c_revisit/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit.dir/build.make CMakeFiles/c_revisit.dir/build
-.PHONY : c_revisit/fast
 
 Add2Integers.o: Add2Integers.c.o
 
@@ -490,6 +503,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit.dir/build.make CMakeFiles/c_revisit.dir/main.c.s
 .PHONY : main.c.s
 
+population.o: population.c.o
+
+.PHONY : population.o
+
+# target to build an object file
+population.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_population.dir/build.make CMakeFiles/c_revisit_population.dir/population.c.o
+.PHONY : population.c.o
+
+population.i: population.c.i
+
+.PHONY : population.i
+
+# target to preprocess a source file
+population.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_population.dir/build.make CMakeFiles/c_revisit_population.dir/population.c.i
+.PHONY : population.c.i
+
+population.s: population.c.s
+
+.PHONY : population.s
+
+# target to generate assembly for a file
+population.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_revisit_population.dir/build.make CMakeFiles/c_revisit_population.dir/population.c.s
+.PHONY : population.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -503,6 +543,7 @@ help:
 	@echo "... c_revisit_circleComputation"
 	@echo "... c_revisit_convertTemperature"
 	@echo "... c_revisit_introduction"
+	@echo "... c_revisit_population"
 	@echo "... c_revisit_promptadd2integers"
 	@echo "... c_revisit_sumOddEven"
 	@echo "... c_revisit_testArithmetics"
@@ -534,6 +575,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... population.o"
+	@echo "... population.i"
+	@echo "... population.s"
 .PHONY : help
 
 
