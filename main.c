@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 
 // these are abstraction, "main" needs to know that these functions exist
 void linearSearch();
 void printIntegers();
+void printStrings();
 
 int main() {
-    printIntegers();
+    printStrings();
     return 0;
 }
 
@@ -54,5 +56,35 @@ void printIntegers() {
     printf("%i\n", *p);
 }
 
+void printStrings() {
+    // 1st way to declare string
+    char string[] = "Hello";    // \0 is invisible, but it is there
 
+    printf("%c\n", string[0]);  // expect 'H'
+    printf("%s\n", string); // expect 'Hello'
+
+    // strlen() returns unsigned long, %lu formatter for unsigned long
+    printf("%lu\n", strlen(string));     // return 5
+    printf("%p\n", &string[5]);
+
+
+    // 2nd way to declare string
+    char string2[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+    printf("%lu\n", strlen(string2));    // also return 5, interesting
+
+    printf("%p\n", &string2[0]);
+    printf("%p\n", &string2[1]);
+    printf("%p\n", &string2[2]);
+    printf("%p\n", &string2[3]);
+    printf("%p\n", &string2[4]);
+    printf("%p\n", &string2[5]); // returns address of last null character in the string
+    printf("%p\n", &string2);   // returns the first character's address
+
+    // another way to declare strings
+    // print string via pointer arithmetic
+    char *s = "HI!";
+    printf("%c\n", *s);
+    printf("%c\n", *(s+1));
+    printf("%c\n", *(s+2));
+}
 
