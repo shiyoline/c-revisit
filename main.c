@@ -1,10 +1,11 @@
 #include <stdio.h>
 
+// these are abstraction, "main" needs to know that these functions exist
 void linearSearch();
+void printIntegers();
 
 int main() {
-    linearSearch();
-
+    printIntegers();
     return 0;
 }
 
@@ -28,4 +29,30 @@ void linearSearch() {
             printf("Found 7!");
     }
 }
+
+// print integers and addresses
+void printIntegers() {
+    int n = 50;
+    int *p = &n;    // store integer n's address
+
+    // print integer
+    printf("%i\n", n);
+
+    // print an integer's address
+    // %p is format code for an address
+    printf("%p\n", &n);
+
+    // print an integer via its address
+    // * is a dereference pointer, we "go to" the address of n
+    printf("%i\n", *&n);
+
+    // print address of n
+    // p holds address of n
+    printf("%p\n", p);
+
+    // print an integer via its address
+    printf("%i\n", *p);
+}
+
+
 
