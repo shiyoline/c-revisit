@@ -5,9 +5,10 @@
 void linearSearch();
 void printIntegers();
 void printStrings();
+void printArray();
 
 int main() {
-    printStrings();
+    printArray();
     return 0;
 }
 
@@ -56,6 +57,7 @@ void printIntegers() {
     printf("%i\n", *p);
 }
 
+// print strings using different techniques
 void printStrings() {
     // 1st way to declare string
     char string[] = "Hello";    // \0 is invisible, but it is there
@@ -87,4 +89,19 @@ void printStrings() {
     printf("%c\n", *(s+1));
     printf("%c\n", *(s+2));
 }
+
+// print arrays using pointer arithmetic
+void printArray() {
+    int nums[] = {4, 6, 8, 2, 7, 5, 0}; // length = 6
+
+    // print numbers
+    printf("%i\n", *nums);  // returns 4
+    printf("%i\n", *(nums + 1));  // returns 6
+
+    // same as above
+    printf("%i\n", nums[0]);
+    printf("%i\n", nums[1]);
+}
+
+
 
