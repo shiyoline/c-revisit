@@ -16,10 +16,26 @@ void capitalizeStringWithStrcpy();
 void capitalizeStringWithNoMemoryError();
 void testValgrind();
 void garbageValues();
+void swapIntegers(int *a, int *b);
 
 int main() {
-    garbageValues();
+    int a = 2;
+    int b = 5;
+
+    swapIntegers(&a, &b);
+
+    printf("a: %i, b: %i\n", a, b);
     return 0;
+}
+
+// interesting!
+// make sure to remember this
+// de-reference is super important
+void swapIntegers(int *a, int *b) {
+    int temp = *a;
+
+    *a = *b;
+    *b = temp;
 }
 
 void garbageValues() {
@@ -42,13 +58,13 @@ void garbageValues() {
     *y = 13;
     printf("%i\n", *x);
     printf("%i\n", *y);
-
 }
 
 // this causes memory leaks
 // make sure to allocate enough memory
+// and free space at the end
 void testValgrind() {
-    char *s = malloc(4);
+    char *s = malloc(3);
     s[0] = 'H';
     s[1] = 'I';
     s[2] = '!';
