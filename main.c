@@ -17,15 +17,40 @@ void capitalizeStringWithNoMemoryError();
 void testValgrind();
 void garbageValues();
 void swapIntegers(int *a, int *b);
+void incorrectlyGetsString();
+void openFile();
 
 int main() {
-    int a = 2;
-    int b = 5;
-
-    swapIntegers(&a, &b);
-
-    printf("a: %i, b: %i\n", a, b);
+    openFile();
     return 0;
+}
+
+// interesting
+// this creates a file if the file doesn't eixst
+void openFile() {
+    // mode: a = append, r = read, w = write
+    FILE *file = fopen("test.txt", "a");
+    if (file == NULL)
+        return;
+
+
+    fprintf(file, "Print success");
+
+    fclose(file);
+}
+
+// this will crash, make sure to allocate memory for string s
+void incorrectlyGetsString() {
+    char *s;
+    printf("s:");
+    scanf("%s", s);
+    printf("s: %s\n", s);
+
+    // dangerously gets a string using scanf
+    // what if user inputs more than 4 characters?
+    char str[4];
+    printf("s:");
+    scanf("%s", s);
 }
 
 // interesting!
