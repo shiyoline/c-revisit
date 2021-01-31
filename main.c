@@ -1,60 +1,157 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 // these are abstraction, "main" needs to know that these functions exist
 void linearSearch();
 void printIntegers();
 void printStrings();
 void printArray();
+void compareStrings();
+void compareStringAddresses();
+void capitalizeStrings();
+void capitalizeWholeString();
+void capitalizeStringWithStrcpy();
+void capitalizeStringWithNoMemoryError();
+void testValgrind();
 
 int main() {
-    printArray();
+    testValgrind();
     return 0;
 }
 
-// for loop and array size
-void linearSearch() {
-    int nums[] = {0, 1, 2, 3, 4, 5, 6};
+// this causes memory leaks
+// make sure to allocate enough memory
+void testValgrind() {
+    char *s = malloc(4);
+    s[0] = 'H';
+    s[1] = 'I';
+    s[2] = '!';
+    s[3] = '\0';
+    printf("%s\n", s);
 
-    int size = sizeof nums;
-    printf("Size: %i\n", size);   // output = 4 * 7 = 28
+    free(s);
+}
 
-    int length = size / sizeof nums[0];
-    printf("Length: %i\n", length); // output = 7
+void capitalizeStringWithNoMemoryError() {
+    char string[] = "hello";
 
-    for (int i = 0; i < length; i++) {
-        if (nums[i] == 4)
-            printf("Found 4!\n");
+    char *string2 = malloc(strlen(string) + 1);
+
+    if (string2 == NULL)    // case where computer runs out of memory
+        return;
+
+    // copy strings
+    strcpy(string2, string);
+
+    // capitalize copy
+    for (int i = 0, n = strlen(string); i <= n; i++) {
+        string2[i] = toupper(string2[i]);
     }
 
-    for (int i = 0; i < length; i++) {
-        if (nums[i] == 7)
-            printf("Found 7!");
+    printf("String: %s\n", string);
+    printf("String2: %s\n", string2);
+
+
+    free(string2);  // mark it usable for other programs, though value is still here
+
+
+    printf("String2: %s\n", string2);
+
+}
+
+
+void capitalizeStringWithStrcpy() {
+    char string[] = "hello";
+
+    char *string2 = malloc(strlen(string) + 1);
+
+    // copy strings
+    strcpy(string2, string);
+
+    // capitalize copy
+    for (int i = 0, n = strlen(string); i <= n; i++) {
+        string2[i] = toupper(string2[i]);
+    }
+
+    printf("String: %s\n", string);
+    printf("String2: %s\n", string2);
+}
+
+
+void capitalizeWholeString() {
+    char string[] = "hello";
+
+    char *string2 = malloc(strlen(string) + 1);
+
+    for (int i = 0, n = strlen(string); i <= n; i++) {
+        string2[i] = string[i];
+    }
+
+    // capitalize copy
+    for (int i = 0, n = strlen(string); i <= n; i++) {
+        string2[i] = toupper(string2[i]);
+    }
+
+    printf("String: %s\n", string);
+    printf("String2: %s\n", string2);
+}
+
+// Capitalize a string
+void capitalizeStrings() {
+    char string[] = "hello";
+
+    char *string2 = string;
+
+    char c = 'c';
+
+    string2[0] = toupper(string2[0]);
+
+    printf("c: %c\n", c);
+    printf("String: %s\n", string);
+    printf("String2: %s\n", string2);
+}
+
+// compare two strings addresses
+void compareStringAddresses() {
+    char *string = "Hello";
+    char *string2 = "Hello2";
+
+    if (string == string2) {
+        printf("Equal\n");
+    } else {
+        printf("Different\n");
+    }
+
+    printf("String: %p\n", string);
+    printf("String2: %p\n", string2);
+}
+
+
+// compare two strings contents
+void compareStrings() {
+    char *string = "Hello";
+    char *string2 = "Hello2";
+
+    if (strcmp(string, string2)) {
+        printf("Equal\n");
+    } else {
+        printf("Different\n");
     }
 }
 
-// print integers and addresses
-void printIntegers() {
-    int n = 50;
-    int *p = &n;    // store integer n's address
+// print arrays using pointer arithmetic
+void printArray() {
+    int nums[] = {4, 6, 8, 2, 7, 5, 0}; // length = 6
 
-    // print integer
-    printf("%i\n", n);
+    // print numbers
+    printf("%i\n", *nums);  // returns 4
+    printf("%i\n", *(nums + 1));  // returns 6
 
-    // print an integer's address
-    // %p is format code for an address
-    printf("%p\n", &n);
-
-    // print an integer via its address
-    // * is a dereference pointer, we "go to" the address of n
-    printf("%i\n", *&n);
-
-    // print address of n
-    // p holds address of n
-    printf("%p\n", p);
-
-    // print an integer via its address
-    printf("%i\n", *p);
+    // same as above
+    printf("%i\n", nums[0]);
+    printf("%i\n", nums[1]);
 }
 
 // print strings using different techniques
@@ -90,18 +187,54 @@ void printStrings() {
     printf("%c\n", *(s+2));
 }
 
-// print arrays using pointer arithmetic
-void printArray() {
-    int nums[] = {4, 6, 8, 2, 7, 5, 0}; // length = 6
 
-    // print numbers
-    printf("%i\n", *nums);  // returns 4
-    printf("%i\n", *(nums + 1));  // returns 6
+// print integers and addresses
+void printIntegers() {
+    int n = 50;
+    int *p = &n;    // store integer n's address
 
-    // same as above
-    printf("%i\n", nums[0]);
-    printf("%i\n", nums[1]);
+    // print integer
+    printf("%i\n", n);
+
+    // print an integer's address
+    // %p is format code for an address
+    printf("%p\n", &n);
+
+    // print an integer via its address
+    // * is a dereference pointer, we "go to" the address of n
+    printf("%i\n", *&n);
+
+    // print address of n
+    // p holds address of n
+    printf("%p\n", p);
+
+    // print an integer via its address
+    printf("%i\n", *p);
 }
+
+// for loop and array size
+void linearSearch() {
+    int nums[] = {0, 1, 2, 3, 4, 5, 6};
+
+    int size = sizeof nums;
+    printf("Size: %i\n", size);   // output = 4 * 7 = 28
+
+    int length = size / sizeof nums[0];
+    printf("Length: %i\n", length); // output = 7
+
+    for (int i = 0; i < length; i++) {
+        if (nums[i] == 4)
+            printf("Found 4!\n");
+    }
+
+    for (int i = 0; i < length; i++) {
+        if (nums[i] == 7)
+            printf("Found 7!");
+    }
+}
+
+
+
 
 
 
