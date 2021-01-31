@@ -15,10 +15,34 @@ void capitalizeWholeString();
 void capitalizeStringWithStrcpy();
 void capitalizeStringWithNoMemoryError();
 void testValgrind();
+void garbageValues();
 
 int main() {
-    testValgrind();
+    garbageValues();
     return 0;
+}
+
+void garbageValues() {
+    // when you don't assign values, scores holds garbage values
+    int scores[3];
+    for (int i = 0; i < 3; i++) {
+        printf("%i\n", scores[i]);
+    }
+
+    int *x;
+    int *y;
+
+    x = malloc(sizeof(int));
+
+    *x = 42;
+    printf("%i\n", *x);
+    printf("%i\n", *y); // this prints garbage values
+
+    y = x;
+    *y = 13;
+    printf("%i\n", *x);
+    printf("%i\n", *y);
+
 }
 
 // this causes memory leaks
@@ -33,6 +57,8 @@ void testValgrind() {
 
     free(s);
 }
+
+
 
 void capitalizeStringWithNoMemoryError() {
     char string[] = "hello";
