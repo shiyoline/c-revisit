@@ -19,10 +19,72 @@ void garbageValues();
 void swapIntegers(int *a, int *b);
 void incorrectlyGetsString();
 void openFile();
+void resizingArray();
+void dynamicArray();
 
 int main() {
-    openFile();
+    dynamicArray();
     return 0;
+}
+
+void dynamicArray() {
+    // list of size 3
+    int *list = malloc(3 * sizeof(int));
+
+    printf("Memory: %p\n", &list);
+    printf("Memory 0: %p\n", &list[0]);
+    printf("Memory 1: %p\n", &list[1]);
+
+    // case where computer runs out of memory
+    if (list == NULL) return;
+
+    list[0] = 1;
+    list[1] = 2;
+    list[2] = 3;
+
+    list = realloc(list, 4 * sizeof (int));
+
+    if (list == NULL) return;
+
+    list[3] = 4;
+
+    printf("Memory: %p\n", &list);
+    printf("Memory 0: %p\n", &list[0]);
+    printf("4: %i\n", list[3]);
+
+    free(list);
+}
+
+void resizingArray() {
+    // list of size 3
+    int *list = malloc(3 * sizeof(int));
+
+    // computer out of memory
+    if (list == NULL) return;
+
+    list[0] = 1;
+    list[1] = 2;
+    list[2] = 3;
+
+    // allocate 4 integers
+    int *temp = malloc(4 * sizeof(int));
+
+    // transfer values
+    for (int i = 0; i < 3; i++) {
+        temp[i] = list[i];
+    }
+    temp[3] = 4;
+
+
+    free(list);
+
+    list = temp;
+
+    for (int i = 0; i < 4; i++) {
+        printf("%i\n", list[i]);
+    }
+
+    free(list);
 }
 
 // interesting
