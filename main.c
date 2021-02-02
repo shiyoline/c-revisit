@@ -21,10 +21,63 @@ void incorrectlyGetsString();
 void openFile();
 void resizingArray();
 void dynamicArray();
+void linkedList();
+
+typedef struct node {
+    int number;
+    struct node *next;
+} node;
 
 int main() {
-    dynamicArray();
+    linkedList();
     return 0;
+}
+
+void linkedList() {
+    node *list = NULL;  // list of size 0
+
+    // add number to list
+    node *n = malloc(sizeof(node));
+    if (n == NULL) return;
+
+    n->number = 1;
+    n->next = NULL;
+    list = n;
+
+    // add number to list
+    n = malloc(sizeof(node));
+    if (n == NULL) {
+        free(list);
+        return;
+    }
+
+    n->number = 2;
+    n->next = NULL;
+    list->next = n;
+
+    // add number to list
+    n = malloc(sizeof(node));
+    if (n == NULL) {
+        free(list->next);
+        free(list);
+        return;
+    }
+
+    n->number = 3;
+    n->next = NULL;
+    list->next->next = n;
+
+    // print list
+    for (node *tmp = list; tmp != NULL; tmp = tmp->next) {
+        printf("%i\n", tmp->number);
+    }
+
+    // free list
+    while (list != NULL) {
+        node *tmp = list->next;
+        free(list);
+        list = tmp;
+    }
 }
 
 void dynamicArray() {
